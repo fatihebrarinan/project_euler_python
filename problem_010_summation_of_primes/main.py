@@ -7,7 +7,7 @@ while nums:
     prime_number = min(nums)
     print(prime_number)
     sum += prime_number
-    nums -= set(range(prime_number*prime_number, BOUND + 1, prime_number))
+    nums -= set(range(prime_number, BOUND + 1, prime_number))
 print(sum)
 
 # Takes about 20 minutes.
